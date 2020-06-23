@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+    }
+</style>
+
+
+<div class="center">
+    <h1 style="color: #FFFFFA; font-weight: bold; padding: 20px;">Ooopsie, an error occurred! 🙄</h1>
+    <h2 style="color: #FFFFFA; font-weight: bold; padding: 10px;">Make sure that:</h2>
+    <ul style="color: #FFFFFA; padding: 10px;">
+        <li>You got your playlist on youtube as a public playlist</li>
+        <li style="padding: 10px;">The playlist is no longer than 200 musics</li>
+    </ul>
+</div>
+
+{% endblock%}

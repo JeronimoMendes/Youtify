@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+	.titulo{
+		padding: 25px;
+		text-align: center;
+		color: #FFFFFA;
+	}
+	.btn1 {
+		display: inline-block;	
+		margin: 10px;
+		border-radius: 30%;
+		border-style: solid;
+		border-color: transparent;
+		position: relative;
+		background: transparent;
+		color: #FFFFFA;
+	}
+	.btn1 i{
+		font-size: 60px;
+		transition: 0.2s linear;
+	}
+	.btn1:hover i{
+		transform: scale(1.4);
+		color: #E7261C;
+	}
+
+</style>
+
+<div class="mainDiv">
+		<h1 class="titulo" style="font-weight: bold; padding-top: 40px;">🙌 Welcome to Youtify! 🙌</h1>
+		<h2 class="titulo">Here you can convert your <span style="color: #E7261C;">Youtube</span> playlist to <span style="color: #1DB954;">Spotify</span> 🤘</h2>
+		<h2 class="titulo">All you need is 👇</h2>
+		<ul style="text-align: center; color: #FFFFFA;  font-weight: bold; list-style-position: inside;">
+		<li>Public Youtube playlist</li>
+		<li>The playlist is no longer than 200 musics</li>
+		</ul> 
+		<h2 class="titulo">Simple, isn't it?!</h2>
+		<form action="/yt" style="text-align: center;">
+			<button class="btn1" type="submit"><i class="fas fa-angle-double-right"></i></button></a>
+		</form>
+</div>
+{% endblock %}

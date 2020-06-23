@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+	body{
+		padding: 0;
+		margin: 0;
+	}
+	.btn1 {
+		display: inline-block;
+		margin: 10px;
+		border-radius: 30%;
+		border-style: solid;
+		border-color: transparent;
+		position: relative;
+		background: transparent;
+		color: #FFFFFA;
+	}
+	.btn1 i{
+		font-size: 60px;
+		transition: 0.2s linear;
+	}
+	.btn1:hover i{
+		transform: scale(1.4);
+		color: #E7261C;
+	}
+	.caixa{
+		font-size: 25px;
+		width: 950px;
+		height: 50px;
+		transition: 0.2s linear;
+		border-style: solid;
+		border-color: #E7261C;
+		border-radius: 15px;
+		color: #231F20;
+		
+	}
+	.caixa:focus{
+		transform: scale(1.1);
+		background-color: #E7261C;
+		color: #FFFFFA;
+	}
+
+	.icon11{
+		display: inline-block;
+		position: relative;
+		background: transparent;
+		color: #E7261C;
+		font-size: 150px;
+		text-align: center;
+		padding: 0px;
+	}
+</style>
+<div class="mainDiv" style="text-align: center;">
+	<div class="icon11"><i class="fab fa-youtube"></i></div>
+
+	<form action="/yt" method="POST" style="text-align: center">
+	  <div class="form-group">
+	    <input autocomplete="off" type="input" class="caixa" id="yt_url" name="yt_url" placeholder="Playlist URL">
+	  </div>
+	  <button class="btn1" type="submit"><i class="fas fa-angle-double-right"></i></button></a>
+	</form>
+</div>
+
+{% endblock %}

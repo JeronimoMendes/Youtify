@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style >
+	.caixa{
+		font-size: 25px;
+		width: 950px;
+		height: 50px;
+		transition: 0.2s linear;
+		border-style: solid;
+		border-color: #515052;
+		border-radius: 15px;
+		border-color: #1DB954;
+		color: #515052;		
+		
+	}
+	.caixa:focus{
+		transform: scale(1.1);
+		background-color: #1DB954;
+		color: #FFFFFA;
+	}
+	.btn1 {
+		display: inline-block;
+		margin: 10px;
+		border-radius: 30%;
+		border-style: solid;
+		border-color: transparent;
+		position: relative;
+		background: transparent;
+		padding: 30px;
+	}
+	.btn1 i{
+		font-size: 60px;
+		transition: 0.2s linear;
+		color: #FFFFFA;
+	}
+	.btn1:hover i{
+		transform: scale(1.4);
+		color: #1DB954;
+	}
+
+	.nome1 {
+		text-align:center;
+	    color: #FFFFFA;
+	    padding: 30px;
+	}
+
+	.nome2 {
+		text-align:center;
+	    color: #1DB954;
+	}	
+</style>
+
+<div class="mainDiv">
+	<h1 class="nome1">Hello, <span class="nome2">{{username}}</span> 🤍</h1>
+
+	<form method="POST" style="text-align:center">
+
+	    <input autocomplete="off" class="caixa" type="text" name="nome_playlist" id="name" placeholder="Playlist's name">
+	   
+	    <h1></h1>
+
+	    <input autocomplete="off" class="caixa" type="text" name="descr_playlist" id="name" placeholder="Playlist's description">
+
+	    <h1></h1>
+
+	    <button class="btn1" type="submit"><i class="fas fa-angle-double-right"></i></button></a>
+	</form>
+</div>	
+{% endblock%}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content%}
+<style >
+	.btn {
+		border-color: #FFFFFA;
+		color: #FFFFFA;
+		font-size: 30px;
+	}
+
+	.btn:hover{
+		background-color: #1DB954;
+	}
+	.icon11{
+	display: inline-block;
+	position: relative;
+	background: transparent;
+	color: #1DB954;
+	font-size: 150px;
+	text-align: center;
+	padding: 0px;
+	}
+</style>
+
+<div class="mainDiv" style="text-align: center;">
+	<div class="icon11"><i class="fab fa-spotify"></i></div>
+	<div style="text-align: center">
+	<a href={{link}}><button type="button" class="btn btn-outline-dark" >Login <i class="fas fa-sign-in-alt"></i></button></a>
+	</div>
+</div>
+{% endblock %}
