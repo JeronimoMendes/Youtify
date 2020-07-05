@@ -1,6 +1,6 @@
 # Youtify
 
-Foobar is a web application that converts Youtube playlists to Spotify.
+Youtify is a web application that converts Youtube playlists to Spotify.
 
 ## Usage
 
